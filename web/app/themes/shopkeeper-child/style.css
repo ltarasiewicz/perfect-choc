@@ -1,0 +1,30 @@
+/*
+Theme Name: Shopkeeper Child Theme
+Theme URI: http://shopkeeper.getbowtied.com/
+Description: This is a child theme for Shopkeeper.
+Author: Get Bowtied
+Author URI: http: //www.getbowtied.com/
+Template: shopkeeper
+Version: 1.0
+*/
+h1 {
+  color: #d6bd85 !important; }
+
+footer#site-footer {
+  background: #3e3530; }
+  footer#site-footer a {
+    color: #fff; }
+  footer#site-footer .site-footer-widget-area {
+    text-align: center;
+    margin-bottom: 0;
+    color: #fff; }
+    footer#site-footer .site-footer-widget-area > .row {
+      border: none !important; }
+    footer#site-footer .site-footer-widget-area .widget {
+      margin-bottom: 40px; }
+
+#page_wrapper.sticky_header #primary.content-area {
+  margin-top: 0; }
+
+.choc-gold {
+  color: #d6bd85; }

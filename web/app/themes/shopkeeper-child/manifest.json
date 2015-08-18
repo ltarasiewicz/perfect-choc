@@ -1,0 +1,23 @@
+    {
+      "dependencies": {
+        "style.css": {
+          "files": [
+            "style.scss"
+          ]
+        },
+        "hp.css": {
+          "files": [
+            "hp.scss"
+          ]
+        },
+        "products.css": {
+          "files": [
+            "products.scss"
+          ]
+        }
+      },
+      "paths": {
+        "source": "custom-sass/",
+        "dist": "dist/"
+      }
+    }

@@ -1,0 +1,7 @@
+.select2-container .select2-choice, .big-select, .list_shop_categories {
+  color: #3d342d !important; }
+  .select2-container .select2-choice > li > a > span.category_name, .big-select > li > a > span.category_name, .list_shop_categories > li > a > span.category_name {
+    color: #3d342d; }
+
+a.product-title-link {
+  color: #3d342d; }
