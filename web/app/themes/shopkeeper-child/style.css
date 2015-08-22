@@ -13,7 +13,9 @@ h1, h2, h3 {
 .vc_btn3.vc_btn3-color-grey, .vc_btn3.vc_btn3-color-grey.vc_btn3-style-flat, .vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern {
   color: #fff;
   background-color: #d4be85;
-  font-size: 20px; }
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold; }
   .vc_btn3.vc_btn3-color-grey:hover, .vc_btn3.vc_btn3-color-grey.vc_btn3-style-flat:hover, .vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:hover {
     background-color: #3E3530;
     color: #fff; }

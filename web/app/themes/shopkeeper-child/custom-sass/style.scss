@@ -20,11 +20,15 @@ h1, h2, h3 {
   color: #fff;
   background-color: $choc-gold;
   font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
   &:hover {
     background-color: $choc-brown;
     color: #fff;
   }
 }
+
+
 
 .hp-main-heading h2 {
   font-size: 70px;
