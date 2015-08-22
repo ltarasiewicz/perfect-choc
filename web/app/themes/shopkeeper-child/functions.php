@@ -27,6 +27,15 @@ function chocoThemeEnqueueStyles()
         );
     }
 
+    wp_enqueue_script('custom-css', get_stylesheet_directory_uri() . '/js/custom.js', array('jquery'));
+
+    $data = [
+        'images_path' => get_stylesheet_directory_uri() . '/images',
+        'is_homepage' => is_front_page() ? true: false,
+    ];
+
+    wp_localize_script('custom-css', 'data', $data);
+
 }
 
 //function chocoRegisterWidgets()
