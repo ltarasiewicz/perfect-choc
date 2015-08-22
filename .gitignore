@@ -36,3 +36,6 @@ bin
 
 # PHPStorm
 .idea
+
+# Theme backups
+web/app/envato-backups/

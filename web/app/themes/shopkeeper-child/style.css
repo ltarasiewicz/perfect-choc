@@ -7,8 +7,23 @@ Author URI: http: //www.getbowtied.com/
 Template: shopkeeper
 Version: 1.0
 */
-h1 {
-  color: #d6bd85 !important; }
+h1, h2, h3 {
+  color: #3E3530 !important; }
+
+.vc_btn3.vc_btn3-color-grey, .vc_btn3.vc_btn3-color-grey.vc_btn3-style-flat, .vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern {
+  color: #fff;
+  background-color: #d4be85;
+  font-size: 20px; }
+  .vc_btn3.vc_btn3-color-grey:hover, .vc_btn3.vc_btn3-color-grey.vc_btn3-style-flat:hover, .vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:hover {
+    background-color: #3E3530;
+    color: #fff; }
+
+.hp-main-heading h2 {
+  font-size: 70px;
+  color: #3E3530; }
+
+.wpb_wrapper h1, .wpb_wrapper h2, .wpb_wrapper h3 {
+  color: #3E3530 !important; }
 
 footer#site-footer {
   background: #3e3530; }

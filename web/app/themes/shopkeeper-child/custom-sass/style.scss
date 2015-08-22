@@ -8,9 +8,35 @@ Template: shopkeeper
 Version: 1.0
 */
 
-h1 {
-  color: #d6bd85 !important;
+@import "variables";
+
+h1, h2, h3 {
+  color: $choc-brown !important;
 }
+
+.vc_btn3.vc_btn3-color-grey,
+.vc_btn3.vc_btn3-color-grey.vc_btn3-style-flat,
+.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern {
+  color: #fff;
+  background-color: $choc-gold;
+  font-size: 20px;
+  &:hover {
+    background-color: $choc-brown;
+    color: #fff;
+  }
+}
+
+.hp-main-heading h2 {
+  font-size: 70px;
+  color: $choc-brown;
+}
+
+.wpb_wrapper {
+  h1, h2, h3 {
+    color: $choc-brown !important;
+  }
+}
+
 
 footer#site-footer {
   background: #3e3530;
