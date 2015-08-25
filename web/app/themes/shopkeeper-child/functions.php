@@ -1,7 +1,16 @@
 <?php
 
 add_action('wp_enqueue_scripts', 'chocoThemeEnqueueStyles');
-//add_action('widgets_init', 'chocoRegisterWidgets');
+add_action('nav_menu_css_class', 'chocAddIconToMenuItem', 10, 2);
+
+function chocAddIconToMenuItem($classes, $item)
+{
+    if ($item->title == 'Limited Edition') {
+        $classes[] = 'menu-item-icon';
+    }
+
+    return $classes;
+}
 
 function chocoThemeEnqueueStyles()
 {
@@ -12,6 +21,11 @@ function chocoThemeEnqueueStyles()
         get_stylesheet_directory_uri() . '/style.css',
         array($parent_style)
     );
+
+//    wp_enqueue_style('font-awesome',
+//        get_stylesheet_directory_uri() . '/bower_components/fontawesome/css/font-awesome.min.css',
+//        array('child-style')
+//    );
 
     if (is_front_page()) {
         wp_enqueue_style('hp-style',
@@ -37,15 +51,5 @@ function chocoThemeEnqueueStyles()
     wp_localize_script('custom-css', 'data', $data);
 
 }
-
-//function chocoRegisterWidgets()
-//{
-//    register_sidebar([
-//        'name'          =>  'Footer text area',
-//        'id'            =>  'footer-text-widget',
-//        'before_widget' =>  '<div>',
-//        'after_widget'  =>  '</div>'
-//    ]);
-//}
 
 

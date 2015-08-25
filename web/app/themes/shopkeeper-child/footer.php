@@ -318,6 +318,8 @@
 		<?php echo $shopkeeper_theme_options['footer_js']; ?>
     <?php endif; ?>
 
+    <script src="//my.hellobar.com/3b7fc501f81ae27c6da3eb8cc4019adbb6776c43.js" type="text/javascript" charset="utf-8" async="async"></script>
+
     <!-- ******************************************************************** -->
     <!-- * WP Footer() ****************************************************** -->
     <!-- ******************************************************************** -->

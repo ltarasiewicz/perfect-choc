@@ -317,6 +317,8 @@
     <?php if ( (isset($shopkeeper_theme_options['footer_js'])) && ($shopkeeper_theme_options['footer_js'] != "") ) : ?>
 		<?php echo $shopkeeper_theme_options['footer_js']; ?>
     <?php endif; ?>
+
+
 	
     <!-- ******************************************************************** -->
     <!-- * WP Footer() ****************************************************** -->
@@ -325,5 +327,4 @@
 	<?php wp_footer(); ?>
     
 </body>
-
 </html>

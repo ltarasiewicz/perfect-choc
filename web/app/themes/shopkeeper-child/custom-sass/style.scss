@@ -76,3 +76,11 @@ footer#site-footer {
 .choc-gold {
   color: #d6bd85;
 }
+
+.menu-item-icon {
+  &:after {
+    content: "\f004";
+    font-family: FontAwesome;
+    color: #ff0000;
+  }
+}
