@@ -9,6 +9,7 @@ Version: 1.0
 */
 
 @import "variables";
+@import url(http://fonts.googleapis.com/css?family=Mr+Dafoe);
 
 h1, h2, h3 {
   color: $choc-brown !important;
@@ -82,5 +83,16 @@ footer#site-footer {
     content: "\f004";
     font-family: FontAwesome;
     color: #ff0000;
+  }
+}
+
+.dafoe > div >h1 {
+  &:first-child {
+    font-family: 'Mr Dafoe', cursive !important;
+    font-weight: 400;
+    font-size: 95px;
+  }
+  &:nth-child(2) {
+    font-weight: 400;
   }
 }

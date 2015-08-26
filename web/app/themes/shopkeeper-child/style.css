@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Mr+Dafoe);
 /*
 Theme Name: Shopkeeper Child Theme
 Theme URI: http://shopkeeper.getbowtied.com/
@@ -50,3 +51,10 @@ footer#site-footer {
   content: "\f004";
   font-family: FontAwesome;
   color: #ff0000; }
+
+.dafoe > div > h1:first-child {
+  font-family: 'Mr Dafoe', cursive !important;
+  font-weight: 400;
+  font-size: 95px; }
+.dafoe > div > h1:nth-child(2) {
+  font-weight: 400; }
