@@ -23,7 +23,8 @@ h1, h2, h3 {
 
 .hp-main-heading h2 {
   font-size: 70px;
-  color: #3E3530; }
+  color: #3E3530;
+  font-family: 'Mr Dafoe', cursive !important; }
 
 .wpb_wrapper h1, .wpb_wrapper h2, .wpb_wrapper h3 {
   color: #3E3530 !important; }
@@ -50,11 +51,21 @@ footer#site-footer {
 .menu-item-icon:after {
   content: "\f004";
   font-family: FontAwesome;
-  color: #ff0000; }
+  color: #d4be85; }
 
 .dafoe > div > h1:first-child {
   font-family: 'Mr Dafoe', cursive !important;
   font-weight: 400;
   font-size: 95px; }
 .dafoe > div > h1:nth-child(2) {
-  font-weight: 400; }
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 60px; }
+
+div#hellobar-bar {
+  display: none; }
+  div#hellobar-bar a.hb-cta-style-button {
+    border: 1px solid white !important; }
+
+.contact-us-btn {
+  margin-top: 40px; }

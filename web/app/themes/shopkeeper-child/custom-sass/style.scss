@@ -34,6 +34,7 @@ h1, h2, h3 {
 .hp-main-heading h2 {
   font-size: 70px;
   color: $choc-brown;
+  font-family: 'Mr Dafoe', cursive !important;
 }
 
 .wpb_wrapper {
@@ -82,7 +83,7 @@ footer#site-footer {
   &:after {
     content: "\f004";
     font-family: FontAwesome;
-    color: #ff0000;
+    color: #d4be85;
   }
 }
 
@@ -93,6 +94,19 @@ footer#site-footer {
     font-size: 95px;
   }
   &:nth-child(2) {
-    font-weight: 400;
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 60px;
   }
+}
+
+div#hellobar-bar {
+  display: none;
+  a.hb-cta-style-button {
+    border: 1px solid white !important;
+  }
+}
+
+.contact-us-btn {
+  margin-top: 40px;
 }

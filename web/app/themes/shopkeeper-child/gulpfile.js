@@ -7,6 +7,11 @@ var merge = require('merge-stream');
 // asset-builder
 var manifest = require('asset-builder')('manifest.json');
 
+// `path` - Paths to base asset directories. With trailing slashes.
+// - `path.source` - Path to the source files. Default: `assets/`
+// - `path.dist` - Path to the build directory. Default: `dist/`
+var path = manifest.paths;
+
 var cssTasks = function(filename) {
     return lazypipe()
         .pipe(function() {
@@ -31,6 +36,10 @@ gulp.task('styles', function() {
     });
     return merged
         .pipe(outputFiles())
+});
+
+gulp.task('watch', function() {
+    gulp.watch([path.source + '*'], ['styles']);
 });
 
 gulp.task('default', ['styles']);
