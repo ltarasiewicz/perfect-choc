@@ -13,6 +13,7 @@ Version: 1.0
 
 h1, h2, h3 {
   color: $choc-brown !important;
+  word-break: normal;
 }
 
 .vc_btn3.vc_btn3-color-grey,
@@ -109,4 +110,20 @@ div#hellobar-bar {
 
 .contact-us-btn {
   margin-top: 40px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .dafoe > div >h1 {
+    &:first-child {
+      font-weight: 400;
+      font-size: 67px;
+    }
+    &:nth-child(2) {
+      font-size: 20px;
+      margin-top: 60px;
+    }
+  }
+
 }
