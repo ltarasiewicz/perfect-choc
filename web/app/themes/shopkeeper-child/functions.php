@@ -3,6 +3,43 @@
 add_action('wp_enqueue_scripts', 'chocoThemeEnqueueStyles');
 add_action('nav_menu_css_class', 'chocAddIconToMenuItem', 10, 2);
 add_shortcode('choc_stock_amount', 'displayProductsLeftInStock');
+add_action('widgets_init', 'registerFooterWidgets');
+
+function registerFooterWidgets()
+{
+    $argsEmail = array(
+        'name'          => 'Footer Email',
+        'id'            => 'footer-email',
+        'description'   => '',
+        'class'         => '',
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+    );
+
+    register_sidebar($argsEmail);
+
+    $argsAddressOne = array(
+        'name'          => 'Footer Shop Address',
+        'id'            => 'footer-shop-address',
+        'description'   => '',
+        'class'         => '',
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+    );
+
+    register_sidebar($argsAddressOne);
+
+    $argsAddressTwo = array(
+        'name'          => 'Footer Factory Address',
+        'id'            => 'footer-factory-address',
+        'description'   => '',
+        'class'         => '',
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+    );
+
+    register_sidebar($argsAddressTwo);
+}
 
 function displayProductsLeftInStock($atts)
 {
@@ -26,7 +63,7 @@ function bartag_func( $atts ) {
 
 function chocAddIconToMenuItem($classes, $item)
 {
-    if ($item->title == 'Limited Edition') {
+    if ($item->title == 'Monthly Special') {
         $classes[] = 'menu-item-icon';
     }
 
