@@ -31,7 +31,9 @@ h1, h2, h3 {
   color: #3E3530 !important; }
 
 footer#site-footer {
-  background: #3e3530; }
+  background-size: 16px 16px;
+  background-color: #3e3530;
+  background-image: linear-gradient(90deg, #39312c 50%, transparent 50%, transparent); }
   footer#site-footer a {
     color: #fff; }
   footer#site-footer .site-footer-widget-area {

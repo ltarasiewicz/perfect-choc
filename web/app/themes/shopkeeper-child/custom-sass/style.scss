@@ -46,7 +46,10 @@ h1, h2, h3 {
 
 
 footer#site-footer {
-  background: #3e3530;
+  background-size: 16px 16px;
+  background-color: #3e3530;
+  background-image: linear-gradient(90deg, #39312c 50%, transparent 50%, transparent);
+
   a {
     color: #fff;
   }
