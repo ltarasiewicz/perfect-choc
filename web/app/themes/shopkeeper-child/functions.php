@@ -99,6 +99,15 @@ function chocoThemeEnqueueStyles()
         );
     }
 
+    $currentPage = get_the_title();
+    $isAboutUsPage = $currentPage == 'About Us' ? true : false;
+    $isMissionStatementPage = $currentPage == 'Mission Statement' ? true : false;
+
+    if ($isAboutUsPage || $isMissionStatementPage) {
+        wp_enqueue_style('shopkeeper-header-default', get_template_directory_uri() . '/css/header-default.css', array(), '1.0', 'all' );    wp_enqueue_style('shopkeeper-header-default', get_template_directory_uri() . '/css/header-default.css', array(), '1.0', 'all' );
+    }
+
+
     wp_enqueue_script('custom-css', get_stylesheet_directory_uri() . '/js/custom.js', array('jquery'));
 
     $data = [
