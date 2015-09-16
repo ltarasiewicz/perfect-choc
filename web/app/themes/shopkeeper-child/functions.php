@@ -4,6 +4,12 @@ add_action('wp_enqueue_scripts', 'chocoThemeEnqueueStyles');
 add_action('nav_menu_css_class', 'chocAddIconToMenuItem', 10, 2);
 add_shortcode('choc_stock_amount', 'displayProductsLeftInStock');
 add_action('widgets_init', 'registerFooterWidgets');
+add_action('after_setup_theme', 'registerAdditionalMenu');
+
+function registerAdditionalMenu()
+{
+    register_nav_menu('left-aligned', __( 'Left Aligned Menu (About Us, Mission Statement)', 'shopkeeper' ));
+}
 
 function registerFooterWidgets()
 {

@@ -178,7 +178,7 @@
 
                             <?php else : ?>
 
-                            	<?php include_once(get_template_directory() . '/header-default.php'); ?>
+                            	<?php include_once(get_stylesheet_directory() . '/header-left-aligned.php'); ?>
                             
                             <?php endif; ?>
                         
