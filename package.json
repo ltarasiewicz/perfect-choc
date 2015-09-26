@@ -1,0 +1,24 @@
+{
+  "name": "Rubbishtaxi",
+  "version": "0.1.0",
+  "description": "Rubbishtaxi.local",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "imagemin-jpegoptim": "~4.0.0"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "gulp-imagemin": "~2.2.1",
+    "merge-stream": "~0.1.7",
+    "imagemin-pngquant": "~4.1.0",
+    "imagemin-jpegtran": "~4.1.0",
+    "imagemin-optipng": "~4.2.0",
+    "imagemin-gifsicle": "~4.1.0"
+
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lukasz Tarasiewicz",
+  "license": "BSD-2-Clause"
+}

@@ -35,7 +35,6 @@ define('WP_SITEURL', getenv('WP_SITEURL'));
 define('CONTENT_DIR', '/app');
 define('WP_CONTENT_DIR', $webroot_dir . CONTENT_DIR);
 define('WP_CONTENT_URL', WP_HOME . CONTENT_DIR);
-
 /**
  * DB settings
  */

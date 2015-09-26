@@ -99,7 +99,6 @@
 
                     
                     <?php
-
 					$header_sticky_class = "";
 					$header_transparency_class = "";
 					$transparency_scheme = "";
