@@ -1,4 +1,4 @@
-set :application, 'perfectionchocolates.com'
+set :application, 'perfectionchocolates.com.au'
 set :repo_url, 'git@github.com:ltarasiewicz/perfect-choc.git'
 
 # Branch options

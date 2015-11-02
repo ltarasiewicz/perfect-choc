@@ -23,5 +23,5 @@ server '192.99.86.144', user: 'web', roles: %w{web app db}
 fetch(:default_env).merge!(wp_env: :production)
 
 set :wpcli_remote_url, 'http://perfectionchocolates.com.au/'
-set :wpcli_local_url, 'http://perfectionchocolates.com.au/'
+set :wpcli_local_url, 'http://perfectionchoc.local/'
 set :wpcli_remote_uploads_dir, '/srv/www/perfectionchocolates.com.au/shared/uploads/'
