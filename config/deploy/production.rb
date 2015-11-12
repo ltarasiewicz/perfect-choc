@@ -8,7 +8,7 @@ set :stage, :production
 
 # Extended Server Syntax
 # ======================
-server '192.99.86.144', user: 'web', roles: %w{web app db}
+server '46.101.209.9', user: 'web', roles: %w{web app db}
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
