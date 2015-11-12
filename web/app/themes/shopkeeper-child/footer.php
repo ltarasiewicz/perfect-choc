@@ -17,7 +17,7 @@
                         <div class="site-footer-copyright-area">
                             <div class="row">
 								<div class="large-12 columns">
-
+                                    <a href="https://www.periscope.tv/chocolatejohnny" class="periscope-on-air" data-size="large">@ChocolateJohnny</a>
 									<?php if ( (isset($shopkeeper_theme_options['footer_social_icons'])) && (trim($shopkeeper_theme_options['footer_social_icons']) == "1" ) ) : ?>
 
                                     <ul class="footer_socials_wrapper">
@@ -325,7 +325,8 @@
     <!-- ******************************************************************** -->
 
     <?php include_once(get_stylesheet_directory() . '/analtyicstracking.php'); ?> <!-- Include GA tracking code -->
-	<?php wp_footer(); ?>
+    <?php include_once(get_stylesheet_directory() . '/peryscopetracking.php'); ?>
+    <?php wp_footer(); ?>
 
 </body>
 

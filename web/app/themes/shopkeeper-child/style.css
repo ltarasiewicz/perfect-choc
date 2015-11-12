@@ -80,3 +80,7 @@ div#hellobar-bar {
   .dafoe > div > h1:nth-child(2) {
     font-size: 20px;
     margin-top: 60px; } }
+
+#twitter-widget-0 {
+  display: block !important;
+  margin: 0 auto; }
